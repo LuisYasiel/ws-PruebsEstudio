@@ -36,5 +36,18 @@ namespace ws_PruebaEstudio
             }
            
         }
+        [WebMethod]
+        public bool VerificarCuenta(string a, string b) 
+        {
+            bool valor = true;
+            if (a == "Juan" && b == "12345")
+            {
+                return valor;
+            }
+            else 
+            {
+                return valor = false;
+            }
+        }
     }
 }
